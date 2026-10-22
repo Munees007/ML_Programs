@@ -1,0 +1,33 @@
+EXERCISE 23: Perform E-mail Classification using Levity
+
+Aim: To classify emails into appropriate categories using Levity AI.
+
+External platform required: Levity account/workspace; inbox connection or another supported integration may require administrator authorization. Levity's current product focuses on AI flows for operational email workflows. Available inputs and classifier setup can depend on workspace configuration. No platform action was performed for this procedure.
+
+Sample labeled examples (manually written; remove names, addresses, and confidential content)
+Subject: Delivery update needed
+Body: Please tell me where order 4582 is and when it will arrive.
+Label: Track and Trace
+
+Subject: Request for a freight quote
+Body: Please send your rate for transporting two pallets from Chennai to Bengaluru next week.
+Label: Booking / Quote Request
+
+Subject: Invoice copy
+Body: Could you send me a copy of the invoice for last month's shipment?
+Label: Documents / Invoice
+
+Procedure
+1. Sign in to Levity and check with the workspace administrator that the email-classification or AI Flow feature is enabled. Current materials show a workflow pattern with an incoming-email trigger, a classifier using subject/body, and category branches. Ask the administrator or Levity support if classifier setup is not available in your account.
+2. Define a small, clear label set, for example Track and Trace, Booking / Quote Request, and Documents / Invoice. Collect representative examples for every label. Do not assume an arbitrary CSV training upload is supported: use only the example/import method offered in the current workspace. If no training-data interface is available, configure the current classifier/AI action using the supported category descriptions or ask Levity support for the enabled setup path.
+3. In AI Flows, create a flow with the supported new-email trigger for a connected test inbox. Select the classification action/AI block and provide the email subject and body as its text input. Configure the permitted labels or category descriptions.
+4. Run the flow on a test email or use the platform's test/run control. Example test email: Subject “Where is shipment 4582?” Body “Please share the current location and estimated delivery date.” Expected category: Track and Trace.
+5. Test each label with separate examples. Review the predicted category and confidence/evaluation details if exposed. Correct confusing examples, improve category descriptions or add examples using the supported platform interface, then test again.
+6. For a live workflow, connect an authorized mailbox only after confirming the trigger and actions. Initially route classifications to a review step or apply a label only; do not automatically send replies or move business-critical messages without approval.
+7. Save/publish the flow if the workspace offers that control. Confirm test results in its run history or inbox labels.
+
+Expected output: A test email is assigned a category such as Track and Trace. Actual classifier UI, training interface, and available connectors vary by account; use the currently available Levity setup and do not treat these sample messages as a real training file.
+
+Result: Thus, the email classification model is implemented and tested successfully using Levity AI.
+
+Note: This is the expected result after the student completes and verifies the flow. Levity was not accessed and no model was trained or tested here.

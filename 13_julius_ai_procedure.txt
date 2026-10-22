@@ -1,0 +1,21 @@
+EXERCISE 13: Analyze the dataset using Julius AI
+
+Aim: To analyze a CSV dataset and interpret the results using Julius AI.
+
+External platform required: Julius AI account and internet access. No platform session was used in preparing this procedure.
+
+Procedure
+1. Prepare a small CSV file with one header row and one record per row. Example: student_scores.csv with columns Student, StudyHours, Score and rows Asha,2,65; Bala,4,78; Chen,6,90; Devi,3,72. This is manually created demonstration data.
+2. Open https://julius.ai and sign in. From My Files choose Upload File and select the CSV. Alternatively, use the upload/add-file option in a chat if shown in your account.
+3. Start a new chat/thread, attach or select the uploaded file as the active data source, and send a prompt.
+4. Try: “Summarize the rows and columns. Report mean, median, minimum, maximum, and missing-value count for StudyHours and Score.”
+5. Try: “Describe the relationship between StudyHours and Score. State the evidence and avoid claiming that correlation proves causation.”
+6. Try: “Create a scatter plot of StudyHours against Score with a title and labeled axes.” Also try: “Show a bar chart of average Score by any available category.”
+7. Check that reported counts match the CSV, review the chart axes and units, and ask Julius to explain any surprising result. Treat generated interpretations as suggestions to verify against the data.
+8. To retain the work, save/share the conversation if that option is available. For an edited dataset, ask Julius to export it as CSV or Excel and use the generated download link. A chart may be saved from its displayed image when supported.
+
+Expected output: Summary statistics, missing-value information, trend/relationship explanation, and one or more charts based on the uploaded data. Exact output depends on the file.
+
+Result: Thus, the dataset is analyzed successfully using Julius AI, and the results are verified.
+
+Note: The result describes the expected lab outcome after the student completes the procedure; the platform was not accessed and no analysis is claimed to have been performed.

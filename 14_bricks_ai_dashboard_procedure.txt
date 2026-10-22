@@ -1,0 +1,21 @@
+EXERCISE 14: Analyze the dataset with dashboard using Bricks AI
+
+Aim: To analyze a dataset and create an interactive dashboard using Bricks AI.
+
+External platform required: Bricks AI account and internet access. No dashboard was created in preparing this procedure.
+
+Procedure
+1. Create a small CSV with headers and consistent rows. Example sales.csv: Date,Region,Product,Units,Revenue; 2026-01-05,North,Tea,12,240; 2026-01-08,South,Coffee,8,320; 2026-02-02,North,Coffee,10,400; 2026-02-10,South,Tea,15,300. These rows are manually created sample data.
+2. Open https://www.thebricks.com, sign in, and create/open a workspace.
+3. Select Import and upload the CSV. Check that the first row is recognized as column headers and that Date, Units, and Revenue have suitable data types. Bricks documentation also describes pasting data into a grid.
+4. Ask the AI to summarize the dataset: “Report total revenue, total units, average revenue per row, and revenue by region and product. Show how you calculated each metric.”
+5. Request charts: “Create a bar chart of revenue by region and a line chart of revenue by date.”
+6. Request useful filters such as Date, Region, and Product. Use the dashboard creation control in the AI prompt bar (documented as Create Dashboard) or ask the AI to create a dashboard from the imported grid.
+7. Review totals against the source rows, check chart titles/axes, and test each filter. Revise charts or layouts with follow-up prompts if needed.
+8. Export or share using the dashboard's available controls. Current Bricks documentation describes exporting/sharing dashboards; exact options may depend on account and workspace.
+
+Expected output: An interactive dashboard with key metrics, charts, and filters. Actual metrics depend on the uploaded data.
+
+Result: Thus, the dataset is analyzed and the dashboard is created successfully using Bricks AI.
+
+Note: This is the expected result after the student completes the steps. Bricks was not accessed and no dashboard is claimed to have been created.

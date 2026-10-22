@@ -1,0 +1,21 @@
+EXERCISE 24: Implementation of Image Classification using Teachable Machine
+
+Aim: To build and test an image classification model using Google's Teachable Machine.
+
+External platform required: Web browser, camera if collecting live examples, and https://teachablemachine.withgoogle.com/. No model was trained in preparing this procedure.
+
+Procedure
+1. Gather image examples for at least two classes. For example, Cat and Dog. Use multiple clear images per class with varied backgrounds, angles, and lighting. Do not use images you lack permission to use.
+2. Open https://teachablemachine.withgoogle.com/train and choose an Image Project, then the standard image model option if prompted.
+3. Rename the two classes Cat and Dog. Add more classes if desired. Use Webcam to record examples or Upload to select image files. Make sure each example is placed under its correct class.
+4. Balance the classes with a reasonable number of varied examples. Avoid placing the same image in both classes. Add a third “Other” class if the model must handle unrelated objects.
+5. Select Train Model and wait for training to finish. Keep the browser tab open while it trains.
+6. Test with new images that were not used for training, or use the webcam if available. Observe the class scores/confidence values. The class with the highest score is the current prediction; test multiple examples and check for errors.
+7. If predictions are unreliable, collect more varied examples and train again. A high confidence score is not proof that every prediction is correct.
+8. Optionally choose Export Model to download or host the model in one of the offered formats. Save the project if the current interface offers a save option.
+
+Expected output: A trained image classifier displays a predicted class and confidence scores for each tested image. Example classes: Cat and Dog; users may choose other classes.
+
+Result: Thus, the image classification model is trained and tested successfully using Teachable Machine.
+
+Note: This is the expected result after the student completes the workflow. Teachable Machine was not accessed and no model is claimed to have been trained.

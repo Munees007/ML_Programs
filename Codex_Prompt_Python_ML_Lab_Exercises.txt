@@ -1,0 +1,379 @@
+PYTHON AND MACHINE LEARNING LAB EXERCISES Codex Instructions and
+Exercise Details
+
+PURPOSE Generate complete, simple, beginner-friendly lab programs for
+all the exercises below. Follow each title exactly. Create a separate
+Python file for each Python exercise, with clear filenames such as
+01_math_library.py, 02_numpy_arrays.py, and so on. For Julius AI, Bricks
+AI, Levity, and Teachable Machine, provide practical step-by-step
+instructions and any required sample data or setup details rather than
+pretending these external platforms are Python libraries.
+
+GENERAL CODING RULES 1. Keep the code simple and suitable for an MCA
+student lab record. 2. Use beginner-friendly variable names and
+straightforward logic. 3. Comments are optional. Prefer no comments; if
+needed, use only very simple, short comments. 4. Wrap the main program
+logic in try-except so common errors are handled gracefully. Catch
+specific exceptions when practical. Do not hide errors with a bare
+except or silently ignore them. 5. For menu-driven programs, use while
+True and match-case (Python 3.10+). Include an exit option and break
+when selected. 6. Display all menu choices in a single print statement
+using the style: print(“ for Ceil() for Factorial() to Exit”) Do not use
+a separate print statement for every menu option. 7. Validate user input
+and show a simple helpful message for invalid choices or invalid values.
+8. Do not add unnecessary classes, functions, packages, or advanced
+techniques. 9. Use realistic, small sample data when a dataset is not
+specified. Clearly identify any data that is manually created. 10. Each
+exercise should include: Title, Aim, Program or Procedure, Sample
+Output, and Result. 11. Use this common result for ordinary Python
+exercises: “Thus, the above code is executed and the output verified
+successfully.” 12. For visualizations and external AI platforms, use a
+result statement describing the actual output, such as a chart,
+dashboard, analysis, or trained model. 13. Make sure code runs with the
+stated dependencies. Include the pip install command when a third-party
+package is needed. 14. Do not claim that an external AI platform was
+executed or that a model was trained unless the instructions actually
+perform that task. 15. Keep the solution aligned with the exact lab
+title and do not turn a simple exercise into a large project.
+
+USER INPUT FOR MACHINE LEARNING ALGORITHMS For all supervised
+learning/classification/regression exercises, train the model on the
+dataset and then ask the user to enter values for a new sample. Pass
+those entered values to the trained model and display the predicted
+class or value. Do not only print predictions for the training dataset.
+Also show a basic evaluation metric where appropriate. For clustering,
+ask the user to enter a value or sample to assign to a cluster where
+meaningful. Explain briefly when a prediction depends on the features
+available in the chosen dataset.
+
+MENU AND ERROR-HANDLING DETAILS For Math library and other exercises
+where multiple operations are appropriate, offer a menu using while True
+and match-case. Put all options in one print statement, for example:
+print(“ for Ceil() for Factorial() for Square Root to Exit”) Use
+try-except around input conversion and operations. Reject invalid inputs
+such as a negative number for factorial or a negative value for square
+root when using real-valued math.
+
+EXERCISE DETAILS
+
+1.  Implement the functions using Math library Aim: To write a Python
+    program to perform mathematical operations using the Math library.
+    Requirements:
+
+-   Use import math.
+-   Provide a menu using while True and match-case.
+-   Include useful operations such as ceil(), floor(), factorial(),
+    sqrt(), pow(), fabs(), gcd(), and pi-related calculation if
+    appropriate.
+-   Get the required number(s) from the user for each selected
+    operation.
+-   Handle invalid input and invalid mathematical values gracefully.
+
+2.  Create and manipulate multidimensional arrays using NumPy Aim: To
+    write a Python program to create and manipulate multidimensional
+    arrays using the NumPy library. Requirements:
+
+-   Create one-dimensional, two-dimensional, and three-dimensional
+    arrays.
+-   Demonstrate indexing, slicing, shape, dimensions, reshaping,
+    addition, and multiplication.
+-   Use user input where practical, or clearly label the sample array
+    values.
+-   Keep the output readable.
+
+3.  Perform statistical functions using Statistics library Aim: To write
+    a Python program to perform statistical operations using the
+    Statistics library. Requirements:
+
+-   Use the statistics module.
+-   Ask the user to enter a list of numeric values.
+-   Provide a menu using while True and match-case for mean, median,
+    mode, variance, and standard deviation.
+-   Handle empty input and cases where a statistic cannot be calculated.
+
+4.  DataFrame implementation using Pandas Aim: To write a Python program
+    to create and manipulate DataFrames using the Pandas library.
+    Requirements:
+
+-   Create a DataFrame from simple sample data or user input.
+-   Demonstrate displaying, selecting columns, adding a column, updating
+    a value, and deleting a column or row.
+-   Use a menu with while True and match-case if it fits naturally.
+
+5.  Handling the missing values in a dataset Aim: To write a Python
+    program to identify and handle missing values in a dataset using
+    Pandas. Requirements:
+
+-   Create or load a small dataset containing missing values.
+-   Display missing-value counts.
+-   Demonstrate removing missing rows and filling missing numeric values
+    using a suitable method such as mean.
+-   Show the dataset before and after handling missing values.
+
+6.  Load a dataset and perform data analysis Aim: To write a Python
+    program to load a dataset and perform data analysis using Pandas.
+    Requirements:
+
+-   Use a small built-in scikit-learn dataset or a clearly identified
+    sample CSV.
+-   Load the data into a DataFrame.
+-   Display the first rows, column names, row/column count, data types,
+    and useful basic analysis.
+-   Avoid relying on a local file that the user has not been given.
+
+7.  Load a dataset and display its structure with statistical summaries
+    using Pandas Aim: To write a Python program to load a dataset and
+    display its structure and statistical summaries using Pandas.
+    Requirements:
+
+-   Load a dataset.
+-   Display head(), tail(), shape, columns, info(), describe(), and
+    suitable categorical summaries if present.
+-   Keep the output suitable for a lab record.
+
+8.  Load a dataset and display its structure with graphs using Pandas
+    and Matplotlib Aim: To write a Python program to load a dataset and
+    visualize its structure using Pandas and Matplotlib. Requirements:
+
+-   Load a dataset.
+-   Display basic structure.
+-   Draw suitable plots such as a histogram, bar chart, and scatter plot
+    using Pandas plotting or Matplotlib.
+-   Add chart titles and axis labels.
+-   Call plt.show() and handle missing or nonnumeric columns
+    appropriately.
+
+9.  Perform Visualization using Seaborn Aim: To write a Python program
+    to visualize a dataset using the Seaborn library. Requirements:
+
+-   Load a suitable dataset.
+-   Use Seaborn to draw suitable plots, for example a scatter plot,
+    histogram, box plot, or heatmap.
+-   Add titles and labels where appropriate.
+-   Display the plots and use a specific result statement confirming the
+    visualization.
+
+10. Implementation of Covariance and Correlation Aim: To write a Python
+    program to calculate covariance and correlation between variables in
+    a dataset. Requirements:
+
+-   Use numeric data with at least two variables.
+-   Calculate covariance and correlation using Pandas or NumPy.
+-   Display the covariance matrix and correlation matrix.
+-   Optionally show a correlation heatmap if Matplotlib/Seaborn is
+    installed.
+-   Explain briefly that correlation does not prove causation.
+
+11. Perform Normalization in a given dataset Aim: To write a Python
+    program to normalize the values in a given dataset using appropriate
+    normalization techniques. Requirements:
+
+-   Demonstrate Min-Max normalization and, if useful, standardization.
+-   Use scikit-learn preprocessing tools or a simple transparent
+    formula.
+-   Display the original and transformed values.
+-   Explain which columns were transformed.
+
+12. Perform feature selection using Extra Trees Classifier Aim: To write
+    a Python program to perform feature selection using the Extra Trees
+    Classifier algorithm. Requirements:
+
+-   Load a suitable classification dataset.
+-   Separate features and target.
+-   Fit ExtraTreesClassifier.
+-   Display feature importances and selected top features.
+-   Include a new user-input sample only if a trained classifier is also
+    used for prediction; do not present feature selection alone as a
+    prediction algorithm.
+-   Keep the distinction between feature selection and prediction clear.
+
+13. Analyze the dataset using Julius AI Aim: To analyze a given dataset
+    using Julius AI and interpret the results. Requirements:
+
+-   Give step-by-step instructions for uploading a CSV dataset to Julius
+    AI.
+-   Include example prompts to ask for summary statistics, missing
+    values, trends, and charts.
+-   Explain how to interpret the results and save/export them if
+    supported by the platform.
+-   Use the result: “Thus, the dataset is analyzed successfully using
+    Julius AI, and the results are verified.”
+-   Do not invent platform screenshots or claim the platform was
+    accessed.
+
+14. Analyze the dataset with dashboard using Bricks AI Aim: To analyze a
+    given dataset and create an interactive dashboard using Bricks AI.
+    Requirements:
+
+-   Give step-by-step instructions to upload/import a dataset, request
+    analysis, and create a dashboard in Bricks AI.
+-   Include example prompts for key metrics, charts, filters, and
+    insights.
+-   Explain how to review and export/share the dashboard if the platform
+    supports it.
+-   Use the result: “Thus, the dataset is analyzed and the dashboard is
+    created successfully using Bricks AI.”
+-   Do not claim the dashboard was actually created unless the user
+    performs the steps.
+
+15. Perform feature extraction using Principal Component Analysis Aim:
+    To write a Python program to perform feature extraction using
+    Principal Component Analysis (PCA). Requirements:
+
+-   Load a suitable numeric dataset.
+-   Scale the features before applying PCA.
+-   Fit PCA and transform the data.
+-   Display the original feature count, reduced feature count,
+    transformed sample values, and explained variance ratio.
+-   Use scikit-learn.
+
+16. Implement KNN classification algorithm for an Iris dataset using
+    scikit-learn Aim: To write a Python program to classify the Iris
+    dataset using the K-Nearest Neighbors (KNN) algorithm with
+    scikit-learn. Requirements:
+
+-   Load the Iris dataset from scikit-learn.
+-   Split the data into training and testing sets.
+-   Scale features where appropriate and train KNeighborsClassifier.
+-   Display accuracy or another suitable evaluation metric.
+-   Ask the user to enter the four Iris measurements (sepal length,
+    sepal width, petal length, petal width).
+-   Predict and display the class for the new user-entered sample.
+-   Validate numeric input.
+
+17. Home Price Prediction using Linear Regression for error-based
+    learning Aim: To write a Python program to predict house prices
+    using Linear Regression and evaluate the prediction error.
+    Requirements:
+
+-   Use a clearly explained small sample dataset or a suitable provided
+    dataset with house features and prices.
+-   Split the data into training and testing sets.
+-   Train LinearRegression and display suitable error metrics such as
+    MAE and MSE (RMSE if supported by the installed scikit-learn
+    version).
+-   Ask the user to enter the same feature values used by the model,
+    such as area and number of bedrooms, and predict the house price.
+-   Make clear that sample data is for demonstration and predictions are
+    not real property valuations.
+
+18. Perform SVM Classification using scikit-learn Aim: To write a Python
+    program to perform classification using the Support Vector Machine
+    (SVM) algorithm with scikit-learn. Requirements:
+
+-   Load a suitable classification dataset.
+-   Split training and testing data.
+-   Scale features and train SVC using a pipeline where practical.
+-   Display accuracy.
+-   Ask the user to enter feature values for a new sample and display
+    the predicted class.
+-   Clearly state the feature order and validate input.
+
+19. Implement Decision Tree algorithm for an elective dataset Aim: To
+    write a Python program to implement the Decision Tree classification
+    algorithm on a given dataset. Requirements:
+
+-   Use a suitable small elective/course-choice dataset with clearly
+    identified features and target, or a suitable standard
+    classification dataset if the meaning of “elective dataset” is not
+    specified.
+-   Explain the chosen dataset.
+-   Train a DecisionTreeClassifier and display a basic evaluation
+    metric.
+-   Ask the user to enter the feature values for a new sample and
+    display the predicted class.
+-   Do not invent a real institutional dataset; label example data as
+    sample data.
+
+20. Implement Random Forest algorithm with customer churn dataset Aim:
+    To write a Python program to predict customer churn using the Random
+    Forest classification algorithm. Requirements:
+
+-   Use a suitable customer churn dataset or clearly identified sample
+    data.
+-   Handle numeric and categorical features correctly.
+-   Train/test split and train RandomForestClassifier.
+-   Display a basic evaluation metric.
+-   Ask the user to enter the same relevant customer feature values and
+    predict whether the customer is likely to churn.
+-   Explain that predictions depend on the demonstration dataset and are
+    not guaranteed outcomes.
+
+21. Perform Naïve Bayes Classification for loan dataset using
+    scikit-learn Aim: To write a Python program to perform loan approval
+    classification using the Naïve Bayes algorithm with scikit-learn.
+    Requirements:
+
+-   Use a suitable loan dataset or clearly identified sample data.
+-   Handle categorical values appropriately and choose a suitable Naive
+    Bayes variant.
+-   Train/test split and display a basic evaluation metric.
+-   Ask the user to enter the required loan applicant feature values and
+    predict the dataset’s target class.
+-   Explain that a demonstration prediction is not a real lending
+    decision.
+
+22. Customer Segmentation based on Annual Income using K-means algorithm
+    Aim: To write a Python program to perform customer segmentation
+    based on annual income using the K-means clustering algorithm.
+    Requirements:
+
+-   Use a sample customer dataset containing annual income and, if
+    appropriate, spending score.
+-   Scale features if more than one feature is used.
+-   Fit KMeans and display cluster assignments and cluster centers.
+-   Ask the user to enter a new customer’s annual income (and any other
+    selected feature), then assign the customer to the nearest learned
+    cluster.
+-   Explain that cluster numbers are labels, not rankings.
+
+23. Perform E-mail Classification using Levity Aim: To classify emails
+    into appropriate categories using the Levity AI platform.
+    Requirements:
+
+-   Provide practical, step-by-step instructions for setting up an
+    email/text classification workflow in Levity, using the platform’s
+    current supported input format and features.
+-   Explain how to prepare a small sample dataset with email text and
+    labels, if supported.
+-   Explain how to train/test the classifier and try a new email.
+-   Include a clearly labeled sample email and expected category for
+    demonstration.
+-   Use the result: “Thus, the email classification model is implemented
+    and tested successfully using Levity AI.”
+-   Do not claim an external platform action has been performed.
+
+24. Implementation of Image Classification using Teachable Machine Aim:
+    To build and test an image classification model using Google’s
+    Teachable Machine. Requirements:
+
+-   Provide step-by-step instructions to create an image project, add at
+    least two classes, collect/upload sample images, train the model,
+    and test it with new images or webcam if available.
+-   Explain how to show the predicted class and confidence.
+-   Include a simple example of classes, such as Cat and Dog, while
+    allowing the user to choose their own.
+-   Use the result: “Thus, the image classification model is trained and
+    tested successfully using Teachable Machine.”
+-   Do not claim the model has actually been trained unless the user
+    completes the steps.
+
+DEPENDENCIES For Python exercises, list the required packages and
+installation command where necessary. Common packages may include: pip
+install numpy pandas matplotlib seaborn scikit-learn
+
+Do not ask the user to install packages that are not used by that
+exercise. The statistics and math exercises use Python’s standard
+library and do not need pip installation.
+
+FINAL OUTPUT EXPECTATIONS - Create a separate, complete, runnable .py
+file for each Python exercise (1-12, 15-22). - For exercises 13, 14, 23,
+and 24, create concise, numbered platform procedures with sample
+prompts/data and the appropriate result statement. - Include a
+README.txt listing exercise titles, files, dependencies, and run
+instructions. - Include sample output for each exercise. - Keep every
+program beginner-friendly and consistent with the user’s requested menu,
+input, match-case, while True, and try-except style wherever
+applicable. - Verify syntax and test runnable Python scripts where
+possible. Clearly report anything that cannot be tested because it
+requires an external platform or user-provided dataset.
